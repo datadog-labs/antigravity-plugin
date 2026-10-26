@@ -1,6 +1,7 @@
 {
   "name": "@datadog/antigravity-plugin",
   "version": "0.1.0",
+  "private": true,
   "description": "Use Datadog directly in Antigravity through a preconfigured Datadog MCP server. Query logs, metrics, traces, dashboards, and more through natural conversation. This plugin is in preview.",
   "author": "Datadog",
   "license": "Apache-2.0",
