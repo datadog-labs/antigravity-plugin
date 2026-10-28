@@ -1,5 +1,27 @@
 {
   "$schema": "https://antigravity.google/schemas/v1/plugin.json",
   "name": "datadog",
-  "description": "Use Datadog directly in Antigravity through a preconfigured Datadog MCP server. Query logs, metrics, traces, dashboards, and more through natural conversation. This plugin is in preview."
+  "displayName": "Datadog",
+  "version": "0.1.2",
+  "description": "Use Datadog directly in Antigravity through a preconfigured Datadog MCP server. Query logs, metrics, traces, dashboards, and more through natural conversation. This plugin is in preview.",
+  "logo": "assets/logo.png",
+  "author": {
+    "name": "Datadog",
+    "url": "https://www.datadoghq.com"
+  },
+  "homepage": "https://github.com/datadog-labs/antigravity-plugin",
+  "repository": "https://github.com/datadog-labs/antigravity-plugin.git",
+  "license": "Apache-2.0",
+  "keywords": [
+    "datadog",
+    "infrastructure",
+    "mcp",
+    "observability",
+    "productivity"
+  ],
+  "suggestedPrompts": [
+    "Show me error logs for the \"checkout\" service from the last hour",
+    "What monitors are currently alerting?",
+    "Find traces for service \"api-gateway\" with latency > 500ms"
+  ]
 }
