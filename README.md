@@ -9,13 +9,23 @@ Query your Datadog data directly from Antigravity using natural language. Ask ab
 
 ## Getting started
 
-1. Install the plugin from its GitHub repository:
+1. Install the Datadog plugin from the Antigravity marketplace, using either the CLI or the app.
+
+   **CLI:**
 
    ```
-   agy plugin install https://github.com/datadog-labs/antigravity-plugin
+   agy plugin install datadog
    ```
 
-   Plugins installed with the CLI are also available in the Antigravity app and IDE.
+   If you're prompted to choose a marketplace, specify it directly with `agy plugin install datadog@antigravity-plugins-partners`. Run `agy plugin list` to confirm that the plugin is installed and enabled. Plugins installed with the CLI are also available in the Antigravity app and IDE.
+
+   **App or IDE:**
+
+   1. In the left-hand sidebar, select **Skills & Customizations** (or go to **Settings → Customizations**).
+   2. Open the **Marketplace** tab and search for **Datadog**.
+   3. Click **Install**, then restart Antigravity if prompted so the plugin's MCP server and skills load.
+
+   You can also open the plugin controls by typing `/plugin` in the chat input.
 
 2. Run `/ddsetup` in Antigravity to connect the plugin to your Datadog account. The agent will guide you through selecting the correct Datadog MCP domain. You can run this again at any time.
 3. Follow the agent's instructions to refresh the MCP servers and sign in to Datadog in your browser.
