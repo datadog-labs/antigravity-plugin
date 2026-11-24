@@ -3,9 +3,9 @@
     "datadog-antigravity": {
       "serverUrl": "https://not-setup/v1/mcp",
       "headers": {
-        "X-Datadog-MCP-Toolsets": "core",
+        "X-Datadog-MCP-Toolsets": "core,visualizations",
         "X-Datadog-MCP-Referrer-Name": "antigravity-plugin",
-        "X-Datadog-MCP-Referrer-Version": "0.1.2"
+        "X-Datadog-MCP-Referrer-Version": "1.0.0"
       },
       "tools": {
         "list_datadog_skills": {

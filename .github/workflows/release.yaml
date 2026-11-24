@@ -52,13 +52,19 @@ jobs:
       - name: Check if release already exists
         id: check
         run: |
+          # The default shell is `bash -e` without pipefail; without this, a
+          # failed lookup would be masked by wc/tr and read as "no release".
+          set -o pipefail
           TAG="${{ steps.version.outputs.tag }}"
           # Match on tag_name explicitly (not `gh release view`) so this also
           # catches draft releases, which have a tag_name but no git tag ref
           # yet — otherwise every push before the draft is published would
           # create a duplicate draft for the same version.
+          # With --paginate, --jq runs once per page, so emit one line per
+          # matching release and count lines across all pages (gh rejects
+          # --slurp together with --jq).
           MATCH=$(gh api "repos/${{ github.repository }}/releases?per_page=100" --paginate \
-            --jq '[.[] | select(.tag_name == env.TAG)] | length')
+            --jq '.[] | select(.tag_name == env.TAG) | .tag_name' | wc -l | tr -d ' ')
           if [ "$MATCH" -gt 0 ]; then
             echo "exists=true" >> "$GITHUB_OUTPUT"
             echo "Release ${TAG} already exists (or is already drafted), skipping"
