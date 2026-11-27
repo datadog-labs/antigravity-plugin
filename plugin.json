@@ -2,7 +2,7 @@
   "$schema": "https://antigravity.google/schemas/v1/plugin.json",
   "name": "datadog",
   "displayName": "Datadog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Use Datadog directly in Antigravity through a preconfigured Datadog MCP server. Query logs, metrics, traces, dashboards, and more through natural conversation.",
   "logo": "assets/logo.png",
   "author": {

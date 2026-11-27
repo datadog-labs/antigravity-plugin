@@ -68,9 +68,11 @@ Follow these steps in order:
 3. **Tell the user** that the Datadog MCP server has been initialized and to follow these steps:
 
    In the Antigravity app or IDE:
-   1. Open Agent settings (⌘, on Mac or Ctrl+, on Windows/Linux — show the correct shortcut for the current operating system) and go to **Customizations**
-   2. Under the installed MCP servers, click the refresh button
-   3. Click **Authenticate** next to the `datadog-antigravity` server, sign in in the browser, then paste the authorization code into settings and click **Submit**
+   1. In the sidebar, click **Customizations**, then select the Datadog plugin on the **Installed** tab
+   2. On the plugin's **MCP** tab, click the ⋮ menu next to `datadog-antigravity` and select **Restart**
+   3. When the **Sign in required** banner appears, click **Go to Accounts** (or open the plugin's **Accounts** tab)
+   4. Click **Sign in**, log in to Datadog in the browser, and approve the access request
+   5. Return to Antigravity. The account shows **CONNECTED** when sign-in succeeds
 
    In the Antigravity CLI:
    1. Run the command `/mcp` and reload the MCP configuration

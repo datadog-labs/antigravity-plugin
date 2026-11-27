@@ -5,39 +5,7 @@
       "headers": {
         "X-Datadog-MCP-Toolsets": "core,visualizations",
         "X-Datadog-MCP-Referrer-Name": "antigravity-plugin",
-        "X-Datadog-MCP-Referrer-Version": "1.0.0"
-      },
-      "tools": {
-        "list_datadog_skills": {
-          "eager": true
-        },
-        "load_datadog_skill": {
-          "eager": true
-        },
-        "search_datadog_monitors": {
-          "eager": true
-        },
-        "search_datadog_logs": {
-          "eager": true
-        },
-        "analyze_datadog_logs": {
-          "eager": true
-        },
-        "search_datadog_spans": {
-          "eager": true
-        },
-        "get_datadog_trace": {
-          "eager": true
-        },
-        "get_datadog_metric": {
-          "eager": true
-        },
-        "create_datadog_notebook": {
-          "eager": true
-        },
-        "edit_datadog_notebook": {
-          "eager": true
-        }
+        "X-Datadog-MCP-Referrer-Version": "1.0.1"
       }
     }
   }
